@@ -50,6 +50,7 @@ export default defineConfig({
 ```
 
 Change detected in app/Enums/Status.php
-
+```bash
 > php artisan enum-generator:generate
 > Enum generation complete.
+```
