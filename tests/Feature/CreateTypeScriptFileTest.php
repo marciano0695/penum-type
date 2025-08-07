@@ -16,20 +16,20 @@ it('Check values of config file exist on the project', function () {
     $excludes = config('penum-type.excludes');
 
     expect($excludes)->toBeArray();
+
+    $output = config('penum-type.output');
+
+    expect($output)->toBeString();
 });
-
-
 
 it('create file from enum to typescript', function () {
 
     Config::set('penum-type.path', 'tests/app/Enums');
 
+    Config::set('penum-type.output', 'tests/app/resources/js/types');
+
     // Get path of enums from config file
     Artisan::call('penum-type:generate');
 
-    // Foreach each enum file create file
-
-    // Assert if create file
-
-    expect(true)->toBe(true);
+    expect('tests/app/resources/js/types/index.ts')->toBeFile();
 });

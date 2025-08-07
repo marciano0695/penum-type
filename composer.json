@@ -20,7 +20,8 @@
         "psr-4": {
             "Marcionunes\\PenumType\\": "src/",
             "Tests\\": "tests/",
-            "Tests\\App\\": "tests/app/"
+            "Tests\\App\\": "tests/app/",
+            "Tests\\App\\Enums\\": "tests/app/Enums/"
         }
     },
     "config": {
@@ -36,6 +37,7 @@
       }
     },
     "scripts": {
-        "test": "./vendor/bin/pest"
+        "test": "./vendor/bin/pest",
+        "pint": "./vendor/bin/pint"
     }
 }

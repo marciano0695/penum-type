@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Enums;
+namespace Tests\App\Enums;
 
 enum PriorityEnum: int
 {
