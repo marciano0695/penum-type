@@ -2,6 +2,13 @@
     "name": "marcionunes/penum-type",
     "description": "For laravel. Convert your php enum to typescript",
     "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "penum-type",
+        "laravel",
+        "php-typescript"
+    ],
+    "homepage": "https://github.com/marciano0695/penum-type",
     "authors": [
         {
             "name": "Márcio Nunes",
@@ -25,6 +32,7 @@
         }
     },
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
@@ -37,7 +45,10 @@
       }
     },
     "scripts": {
-        "test": "./vendor/bin/pest",
-        "pint": "./vendor/bin/pint"
-    }
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
