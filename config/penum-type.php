@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'path' => 'app/Enums',
 
-    'output' => resource_path('types/enums'),
+    'output' => resource_path('js/types/enums'),
 
     'enum_method_to_export' => 'frontend',
 

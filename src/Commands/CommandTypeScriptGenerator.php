@@ -60,14 +60,14 @@ class CommandTypeScriptGenerator extends Command
             $enumName = $enum->getShortName();
             $interfaces[] = $this->generateInterface($enumName, $frontendData);
 
-            $this->info("Included from frontend(): $enumName");
+            // $this->info("Included from frontend(): $enumName");
         }
 
         // Join all interfaces
         $dtsOutput = implode("\n\n", $interfaces);
         File::put($dtsPath, $dtsOutput);
 
-        $this->info('✅ Generated .d.ts with frontend() enums:');
+        $this->info("✅ Generated .d.ts with $exportMethod() enums:");
         $this->info("- $dtsPath");
     }
 
