@@ -128,7 +128,7 @@ export interface PriorityEnum {
 }
 ```
 
-### Ineriajs HandleInertiaRequests ($page.props)
+### Inertia.js HandleInertiaRequests ($page.props)
 
 ```php
 'constants' => [
