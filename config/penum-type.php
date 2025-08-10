@@ -7,6 +7,10 @@ return [
 
     'output' => resource_path('types/enums'),
 
+    'enum_method_to_export' => 'frontend',
+
+    'export_constants' => false, // WIP
+
     /**
      * Specific which to include when is empty will include all files
      * E.g. AddressTypeEnum::class

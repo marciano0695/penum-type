@@ -1,6 +1,6 @@
 {
     "name": "marcionunes/penum-type",
-    "description": "For laravel. Convert your php enum to typescript",
+    "description": "For laravel. Convert your php enum to typescript .d.ts",
     "type": "library",
     "license": "MIT",
     "keywords": [

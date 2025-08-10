@@ -31,5 +31,5 @@ it('create file from enum to typescript', function () {
     // Get path of enums from config file
     Artisan::call('penum-type:generate');
 
-    expect('tests/app/resources/js/types/index.ts')->toBeFile();
+    expect('tests/app/resources/js/types/enums.d.ts')->toBeFile();
 });

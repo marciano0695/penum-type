@@ -1,6 +1,6 @@
 <?php
 
-namespace Marcionunes\PenumType;
+namespace Marcionunes\PenumType\Commands;
 
 use Illuminate\Console\Command;
 
