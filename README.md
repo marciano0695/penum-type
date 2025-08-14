@@ -1,7 +1,7 @@
 # Laravel Enum to TypeScript Types definitions
 
-This package automatically generates **TypeScript type definitions** (`.d.ts` files) from your Laravel enums, so you can keep backend and frontend in perfect sync without manually duplicating definitions.
-Default method of enum to generate is **frontend** it can be change on the configuration file
+This package automatically generates **TypeScript type definitions** (`.d.ts` files) from your Laravel enums, so you can keep backend and frontend in perfect sync without manually duplicating definitions. Default method of enum to generate is **frontend** it can be change on the configuration file.
+
 ---
 
 ## Example
