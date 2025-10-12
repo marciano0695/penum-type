@@ -1,2 +1,3 @@
 vendor
 tests/app/resources/*
+node_modules
