@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [v1.1.0]
+
+### Added
+
+- vite plugin penum_type()
+
 ## [v1.0.0]
 
 ### Added

@@ -176,7 +176,7 @@ You can automatically regenerate `.d.ts` files when your enums change by adding 
 ### 1. Install the watcher plugin
 
 ```bash
-npm install --save-dev vite-plugin-watch-and-run
+npm install ./vendor/marcionunes/penum-type
 ```
 
 ### 2. Update `vite.config.js`
@@ -184,15 +184,7 @@ npm install --save-dev vite-plugin-watch-and-run
 ```js
 import { defineConfig } from "vite"
 import laravel from "laravel-vite-plugin"
-import { watchAndRun } from "vite-plugin-watch-and-run"
-import { execSync } from "child_process"
-
-let enumPath = "app/Enums"
-try {
-	enumPath = execSync("php artisan penum-type:path").toString().trim()
-} catch (e) {
-	console.warn("[penum-type] Could not determine enum path:", e.message)
-}
+import penum_type from "penum-type"
 
 export default defineConfig({
 	plugins: [
@@ -200,13 +192,7 @@ export default defineConfig({
 			input: ["resources/css/app.css", "resources/js/app.js"],
 			refresh: true,
 		}),
-		watchAndRun([
-			{
-				name: "watch-enums",
-				watch: `${enumPath}/**/*.php`,
-				run: "php artisan penum-type:generate",
-			},
-		]),
+		penum_type(),
 	],
 })
 ```
