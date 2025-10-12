@@ -4,6 +4,28 @@ This package automatically generates **TypeScript type definitions** (`.d.ts` fi
 
 ---
 
+## Installation
+
+Require the package via Composer:
+
+```bash
+composer require marcionunes/penum-type
+```
+
+Change config file to your needs
+
+---
+
+## Generating the TypeScript file
+
+```bash
+php artisan penum-type:generate
+```
+
+This will generate a `enums.d.ts` file at the configured output path.
+
+---
+
 ## Example
 
 ### PHP Enums
@@ -147,28 +169,6 @@ export interface PriorityEnum {
 
 ---
 
-## Installation
-
-Require the package via Composer:
-
-```bash
-composer require marcionunes/penum-type
-```
-
-Change config file to your needs
-
----
-
-## Generating the TypeScript file
-
-```bash
-php artisan penum-type:generate
-```
-
-This will generate a `enums.d.ts` file at the configured output path.
-
----
-
 ## Auto-generate on changes
 
 You can automatically regenerate `.d.ts` files when your enums change by adding a Vite watcher.
@@ -210,22 +210,3 @@ export default defineConfig({
 	],
 })
 ```
-
----
-
-## Example workflow
-
-When you change `app/Enums/PriorityEnum.php`:
-
-```bash
-> php artisan penum-type:generate
-> Enum generation complete.
-```
-
----
-
-## Benefits
-
-- No more manual syncing between backend and frontend enums
-- Type-safe `$page.props.constants` in Inertia.js
-- Automatic regeneration on enum changes
