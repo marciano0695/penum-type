@@ -20,6 +20,8 @@
   "directories": {
     "test": "tests"
   },
+  "main": "src/vite.ts",
+  "types": "src/vite.ts",
   "scripts": {
     "test": "vitest"
   },
